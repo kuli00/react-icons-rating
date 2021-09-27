@@ -3,9 +3,9 @@ export interface Icon {
   viewBox: string;
 }
 
-export interface SingleStarProps {
+export interface SingleIconProps {
   size: number;
-  starId: string;
+  iconId: string;
   fillColor: string;
   strokeColor: string;
   fillPercent: number;
@@ -15,10 +15,10 @@ export interface SingleStarProps {
   icon: Icon;
 }
 
-export interface RatingStarsProps {
-  numOfStars: number;
+export interface RatingIconsProps {
+  numOfIcons: number;
   rating: number;
-  starPadding?: number;
+  iconPadding?: number;
   size?: number;
   fillColor?: string;
   strokeColor?: string;

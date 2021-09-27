@@ -1,4 +1,4 @@
-React Rating Stars
+React Icons Rating
 =======================================
 
 Simple react component to display rating in any svg icon you want.
@@ -7,7 +7,7 @@ Simple react component to display rating in any svg icon you want.
 
 ### List of features
 
-*   Custom number of stars
+*   Custom number of icons
 *   Custom Fill/Stroke/Background color
 *   Floating point rating
 *   Custom icons
@@ -17,13 +17,13 @@ Simple react component to display rating in any svg icon you want.
 
 ```typescript jsx We will use markdown for the Syntax Highlighting
 
-<RatingStars
-    numOfStars={5}
+<RatingIcons
+    numOfIcons={5}
     rating={4.63}
     fillColor="#f00"
     strokeWidth={0}
     size={50}
-    starPadding={5}
+    iconPadding={5}
     direction="row"
     customIcon={{
         path: heartPath,
@@ -37,23 +37,23 @@ Simple react component to display rating in any svg icon you want.
 ### Download & Installation
 
 ```shell 
-npm i react-rating-stars
+npm i react-icons-rating
 ```
 
 ```typescript
-import RatingStars from 'react-rating-stars';
+import RatingStars from 'react-icons-rating';
 ```
 
 ### Props
 |NAME|TYPE|DEFAULT|DESCRIPTION|
 |----|----|-------|-----------|
-|`numOfStars`|`Number`|-|Number of icons to be displayed|
-|`rating`|`Number`|-|How much stars should be colored|
-|`starPadding`|`Number`|`10`|Distance between stars in pixels|
-|`size`|`Number`|`20`|Star size in pixels|
-|`fillColor`|`String`|`#FF0000`|Color of a filled star in HEX|
-|`backgroundColor`|`String`|`#FFFFFF`|Color of an unfilled star in HEX
-|`stokeColor`|`String`|same as `fillColor`|Color of a star border in HEX|
+|`numOfIcons`|`Number`|-|Number of icons to be displayed|
+|`rating`|`Number`|-|How much icons should be colored|
+|`iconPadding`|`Number`|`10`|Distance between icons in pixels|
+|`size`|`Number`|`20`|Icon size in pixels|
+|`fillColor`|`String`|`#FF0000`|Color of a filled icon in HEX|
+|`backgroundColor`|`String`|`#FFFFFF`|Color of an unfilled icon in HEX
+|`stokeColor`|`String`|same as `fillColor`|Color of an icon border in HEX|
 |`strokeWidth`|`Number`|`2`|Stroke width in pixels|
 |`direction`|`row` / `column`|`row`|Direction of stars|
 |`customIcon`|`Object`|see below|Custom object of path and viewbox of SVG icon|

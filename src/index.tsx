@@ -1,14 +1,14 @@
 import React, {ReactElement} from "react";
 import { v4 as uuid } from 'uuid';
 
-import SingleStar from './SingleStar';
-import { RatingStarsProps } from './types';
+import SingleIcon from './SingleIcon';
+import { RatingIconsProps } from './types';
 import defaultIcon  from './const';
 
-const Index = ({
-  numOfStars,
+const IconsRating = ({
+  numOfIcons,
   rating,
-  starPadding = 10,
+  iconPadding = 10,
   size = 20,
   fillColor = '#ff0000',
   backgroundColor = '#ffffff',
@@ -16,7 +16,7 @@ const Index = ({
   strokeColor,
   direction = 'row',
   customIcon = defaultIcon,
- }: RatingStarsProps): ReactElement => {
+ }: RatingIconsProps): ReactElement => {
   const getFillPercent = (starNumber: number): number => {
     switch (true) {
       case starNumber <= Math.floor(rating):
@@ -32,15 +32,15 @@ const Index = ({
     <div
       style={{
         display: 'flex',
-        columnGap: `${starPadding}px`,
+        columnGap: `${iconPadding}px`,
         flexDirection: direction,
       }}
-      title={`${rating} / ${numOfStars}`}
+      title={`${rating} / ${numOfIcons}`}
     >
-      {new Array(numOfStars).fill(null).map((_, key) => (
-        <SingleStar
+      {new Array(numOfIcons).fill(null).map((_, key) => (
+        <SingleIcon
           size={size}
-          starId={uuid()}
+          iconId={uuid()}
           fillColor={fillColor}
           strokeColor={strokeColor || fillColor}
           fillPercent={getFillPercent(key + 1)}
@@ -54,4 +54,4 @@ const Index = ({
   );
 }
 
-export default Index;
+export default IconsRating;

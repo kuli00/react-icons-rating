@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
-import { SingleStarProps } from './types';
+import { SingleIconProps } from './types';
 
-const SingleStar = ({
+const SingleIcon = ({
   size,
-  starId,
+  iconId,
   fillColor,
   strokeColor,
   fillPercent,
@@ -11,7 +11,7 @@ const SingleStar = ({
   direction,
   icon,
   background,
-}: SingleStarProps): ReactElement => {
+}: SingleIconProps): ReactElement => {
   const viewBox = icon.viewBox
     .split(' ')
     .map((x, i) => {
@@ -31,7 +31,7 @@ const SingleStar = ({
     >
       <defs>
         <linearGradient
-          id={starId}
+          id={iconId}
           x1="0%"
           y1="0%"
           x2={direction === 'row' ? '100%' : '0%'}
@@ -43,7 +43,7 @@ const SingleStar = ({
       </defs>
       <path
         d={icon.path}
-        fill={`url(#${starId}`}
+        fill={`url(#${iconId}`}
         stroke={strokeColor}
         strokeWidth={strokeWidth + 'px'}
       />
@@ -51,4 +51,4 @@ const SingleStar = ({
   )
 };
 
-export default SingleStar;
+export default SingleIcon;
