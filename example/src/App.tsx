@@ -9,17 +9,17 @@ function App() {
     <div className="App">
       <RatingIcons
         numOfIcons={5}
-        rating={4.63}
-        fillColor="#f00"
-        strokeWidth={0}
+        rating={4.4}
+        fillColor="#00f"
+        strokeWidth={2}
         size={50}
         iconPadding={5}
         direction="row"
-        customIcon={{
-          path: heartPath,
-          viewBox: '0 0 35 28'
-        }}
-        backgroundColor="#d3d3d3"
+        // customIcon={{
+        //   path: heartPath,
+        //   viewBox: '0 0 35 28'
+        // }}
+        // backgroundColor="#d3d3d3"
       />
     </div>
   );
