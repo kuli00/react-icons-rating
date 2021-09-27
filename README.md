@@ -43,7 +43,7 @@ npm i react-icons-rating
 ```
 
 ```typescript
-import RatingStars from 'react-icons-rating';
+import RatingIcons from 'react-icons-rating';
 ```
 
 ### Props
