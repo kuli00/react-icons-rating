@@ -1,8 +1,15 @@
 {
   "name": "react-rating-stars",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
+  "description": "Simple react component to visualize rating with stars",
+  "keywords": ["react", "rating", "stars", "ui"],
+  "author": "Kuli",
+  "main": "dist/index.ts",
+  "module": "dist/index.ts",
+  "files": ["dist", "README.md"],
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -18,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib/components --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
   }
 }
