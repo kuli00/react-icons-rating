@@ -1,10 +1,13 @@
 {
   "name": "react-icons-rating",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple react component to visualize rating with icons",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/esm/index.d.ts",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
     "build": "npm run build:esm && npm run build:csj",
     "build:esm": "tsc",
