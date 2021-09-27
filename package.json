@@ -1,6 +1,6 @@
 {
   "name": "react-icons-rating",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple react component to visualize rating with icons",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
