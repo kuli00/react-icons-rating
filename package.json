@@ -3,11 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "description": "Simple react component to visualize rating with stars",
-  "keywords": ["react", "rating", "stars", "ui"],
+  "keywords": [
+    "react",
+    "rating",
+    "stars",
+    "ui"
+  ],
   "author": "Kuli",
   "main": "dist/index.ts",
   "module": "dist/index.ts",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.11.4",
